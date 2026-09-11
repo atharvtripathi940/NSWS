@@ -1,3 +1,4 @@
 # NSWS
 This is a NSWS website.
-Author: Atharv Tripathi 
+Author: Atharv Tripathin
+NSWS website prototype 
