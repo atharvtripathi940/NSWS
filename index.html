@@ -1,1 +1,619 @@
- here is a basic outline of a website's structure:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>NSWS Dashboard</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- =========================================
+       MAIN DASHBOARD
+       ========================================= -->
+
+  <div class="dashboard">
+
+    <!-- =========================================
+         LEFT SIDEBAR
+         ========================================= -->
+
+    <aside class="sidebar">
+
+      <div class="logo-area">
+        <span class="logo-circle">🏛️</span>
+
+        <div class="logo-text">
+          <h1>NSWS</h1>
+          <p>National Single Window System</p>
+        </div>
+      </div>
+
+      <ul class="menu">
+
+        <li>
+          <a href="#" class="active">
+            <span class="menu-icon">⌂</span>
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <span class="menu-icon">▦</span>
+            My Business
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <span class="menu-icon">▣</span>
+            Know Your Approvals
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <span class="menu-icon">▤</span>
+            Applications
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <span class="menu-icon">▱</span>
+            Documents
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <span class="menu-icon">♧</span>
+            Notifications
+            <span class="notification-badge">3</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <span class="menu-icon">◷</span>
+            Track Status
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <span class="menu-icon">⚙</span>
+            AI Assistant
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <span class="menu-icon">♙</span>
+            Profile
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <span class="menu-icon">⚙</span>
+            Settings
+          </a>
+        </li>
+
+      </ul>
+
+      <div class="sidebar-bottom">
+        <div class="city-icon">🏙️</div>
+        <div class="slogan">
+          Simpler Approvals<br>
+          Stronger India
+        </div>
+      </div>
+
+    </aside>
+
+
+    <!-- =========================================
+         RIGHT SIDE / MAIN CONTENT
+         ========================================= -->
+
+    <main class="main-content">
+
+      <!-- TOP HEADER -->
+      <header class="top-header">
+
+        <div class="search-box">
+          <span>⌕</span>
+          <input
+            type="text"
+            placeholder="Search approvals, applications, permissions..."
+          >
+        </div>
+
+        <div class="header-right">
+
+          <div class="bell">
+            ♧
+            <span class="bell-badge">3</span>
+          </div>
+
+          <div class="profile">
+            <div class="profile-image">RS</div>
+
+            <div>
+              <div class="profile-name">Rahul Sharma</div>
+              <div class="profile-role">Applicant</div>
+            </div>
+
+            <span>⌄</span>
+          </div>
+
+        </div>
+      </header>
+
+
+      <!-- =========================================
+           WELCOME + BUSINESS CARD
+           ========================================= -->
+
+      <section class="top-grid">
+
+        <!-- Welcome card -->
+        <div class="welcome card">
+
+          <div class="welcome-content">
+
+            <div class="welcome-small">• Welcome Back,</div>
+
+            <h2>Rahul Sharma</h2>
+
+            <p>
+              Your single window to access all business approvals
+              and clearances from government departments.
+            </p>
+
+            <div class="features">
+              <span>◉ Faster</span>
+              <span>|</span>
+              <span>◫ Transparent</span>
+              <span>|</span>
+              <span>◷ Paperless</span>
+            </div>
+
+            <button class="primary-button">
+              Explore Approvals →
+            </button>
+
+          </div>
+
+          <!-- Simple CSS/emoji placeholder for the city illustration -->
+          <div class="city-background">
+            🌆
+          </div>
+
+        </div>
+
+
+        <!-- Business card -->
+        <div class="business-card card">
+
+          <div class="card-title">
+            🏢 Your Business
+          </div>
+
+          <div class="business-name">
+            Green Tech Solutions Pvt. Ltd.
+          </div>
+
+          <div class="business-info">
+            ◫ Manufacturing &nbsp; | &nbsp; 📍 Maharashtra
+          </div>
+
+          <span class="active-status">
+            ✓ Active
+          </span>
+
+          <br>
+
+          <button class="small-button">
+            View / Edit Business →
+          </button>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================================
+           STATISTICS
+           ========================================= -->
+
+      <section class="stats">
+
+        <div class="stat-card card">
+          <div class="stat-icon">📄</div>
+          <div>
+            <strong>Total Approvals</strong>
+            <h3 class="stat-number">14</h3>
+            <p class="stat-description">Required for your business</p>
+          </div>
+        </div>
+
+        <div class="stat-card card">
+          <div class="stat-icon">📋</div>
+          <div>
+            <strong>Applied</strong>
+            <h3 class="stat-number">8</h3>
+            <p class="stat-description">In progress</p>
+          </div>
+        </div>
+
+        <div class="stat-card card">
+          <div class="stat-icon">☑️</div>
+          <div>
+            <strong>Approved</strong>
+            <h3 class="stat-number">4</h3>
+            <p class="stat-description">Successfully completed</p>
+          </div>
+        </div>
+
+        <div class="stat-card card">
+          <div class="stat-icon">🕐</div>
+          <div>
+            <strong>Pending Action</strong>
+            <h3 class="stat-number">2</h3>
+            <p class="stat-description">Requires your attention</p>
+          </div>
+        </div>
+
+      </section>
+
+
+      <!-- =========================================
+           KNOW YOUR APPROVALS + QUICK ACTIONS
+           ========================================= -->
+
+      <section class="middle-grid">
+
+        <!-- Know Your Approvals -->
+        <div class="approvals-card card">
+
+          <h3 class="section-heading">
+            💡 Know Your Approvals
+          </h3>
+
+          <p class="section-description">
+            Get a personalized list of approvals based on your business details.
+          </p>
+
+          <div class="approval-form">
+
+            <div>
+              <label for="state">State</label>
+
+              <select id="state">
+                <option>Maharashtra</option>
+                <option>Uttar Pradesh</option>
+                <option>Delhi</option>
+                <option>Karnataka</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="industry">Industry</label>
+
+              <select id="industry">
+                <option>Manufacturing</option>
+                <option>IT Services</option>
+                <option>Construction</option>
+                <option>Healthcare</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="investment">Investment</label>
+
+              <select id="investment">
+                <option>₹ 5 Crore - ₹ 10 Crore</option>
+                <option>Below ₹ 5 Crore</option>
+                <option>₹ 10 Crore - ₹ 50 Crore</option>
+                <option>Above ₹ 50 Crore</option>
+              </select>
+            </div>
+
+          </div>
+
+          <button class="approval-button">
+            Get My Approvals →
+          </button>
+
+        </div>
+
+
+        <!-- Quick Actions -->
+        <div class="quick-actions card">
+
+          <h3 class="section-heading">
+            ⚡ Quick Actions
+          </h3>
+
+          <div class="action-grid">
+
+            <button class="action-button">
+              📄<br>
+              Apply for Approval →
+            </button>
+
+            <button class="action-button">
+              ☁️<br>
+              Upload Documents →
+            </button>
+
+            <button class="action-button">
+              🔍<br>
+              Track Application →
+            </button>
+
+            <button class="action-button">
+              🔔<br>
+              View Notifications →
+            </button>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================================
+           APPLICATION TRACKING + RECENT ACTIVITY
+           ========================================= -->
+
+      <section class="bottom-grid">
+
+        <!-- Application Tracking -->
+        <div class="tracking-card card">
+
+          <div class="section-heading">
+            📋 Application Tracking
+            <a href="#" class="view-all">View All →</a>
+          </div>
+
+          <table class="application-table">
+
+            <thead>
+              <tr>
+                <th>Application ID</th>
+                <th>Approval Name</th>
+                <th>Department</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>NSWS-001234</td>
+                <td>Factory License</td>
+                <td>Labour Department</td>
+                <td>
+                  <span class="status status-review">
+                    ✓ Under Review
+                  </span>
+                </td>
+                <td>
+                  <a href="#" class="view-link">View →</a>
+                </td>
+              </tr>
+
+              <tr>
+                <td>NSWS-001233</td>
+                <td>Pollution Consent</td>
+                <td>Pollution Control Board</td>
+                <td>
+                  <span class="status status-approved">
+                    ✓ Approved
+                  </span>
+                </td>
+                <td>
+                  <a href="#" class="view-link">View →</a>
+                </td>
+              </tr>
+
+              <tr>
+                <td>NSWS-001232</td>
+                <td>Fire NOC</td>
+                <td>Fire Department</td>
+                <td>
+                  <span class="status status-query">
+                    ✓ Query Raised
+                  </span>
+                </td>
+                <td>
+                  <a href="#" class="view-link">View →</a>
+                </td>
+              </tr>
+
+              <tr>
+                <td>NSWS-001231</td>
+                <td>GST Registration</td>
+                <td>Income Tax Department</td>
+                <td>
+                  <span class="status status-approved">
+                    ✓ Approved
+                  </span>
+                </td>
+                <td>
+                  <a href="#" class="view-link">View →</a>
+                </td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+
+        <!-- Recent Activity -->
+        <div class="activity-card card">
+
+          <div class="section-heading">
+            🕐 Recent Activity
+            <a href="#" class="view-all">View All →</a>
+          </div>
+
+          <div class="activity-item">
+            <div class="activity-icon">✓</div>
+
+            <div class="activity-text">
+              Your application for Pollution Consent has been approved.
+              <span class="activity-time">2 hours ago</span>
+            </div>
+          </div>
+
+          <div class="activity-item">
+            <div class="activity-icon">!</div>
+
+            <div class="activity-text">
+              Query raised for Fire NOC application.
+              Please upload the requested document.
+              <span class="activity-time">5 hours ago</span>
+            </div>
+          </div>
+
+          <div class="activity-item">
+            <div class="activity-icon">♧</div>
+
+            <div class="activity-text">
+              New notification from Labour Department.
+              <span class="activity-time">1 day ago</span>
+            </div>
+          </div>
+
+          <div class="activity-item">
+            <div class="activity-icon">📄</div>
+
+            <div class="activity-text">
+              You have applied for Factory License.
+              <span class="activity-time">1 day ago</span>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================================
+           AI REGULATORY ASSISTANT
+           ========================================= -->
+
+      <section class="assistant card">
+
+        <div class="assistant-title">
+          🤖 AI Regulatory Assistant
+          <span class="beta">Beta</span>
+        </div>
+
+        <p class="assistant-description">
+          Ask anything about approvals, documents and regulations.
+        </p>
+
+        <div class="question">
+          What documents are required for Pollution Consent?
+        </div>
+
+        <div class="question">
+          Which approvals are needed for manufacturing in Maharashtra?
+        </div>
+
+        <div class="question">
+          How long does it take to get a Factory License?
+        </div>
+
+        <div class="assistant-input">
+          <input
+            type="text"
+            placeholder="Type your question..."
+            id="assistantQuestion"
+          >
+
+          <button class="send-button" onclick="askAssistant()">
+            →
+          </button>
+        </div>
+
+        <div class="robot">
+          🤖
+        </div>
+
+        <div class="assistant-message">
+          Hello! I'm your AI assistant.<br>
+          Ask me anything!
+        </div>
+
+      </section>
+
+
+      <!-- =========================================
+           FOOTER
+           ========================================= -->
+
+      <footer class="footer">
+
+        <div>
+          <strong>NSWS</strong>
+          &nbsp; | &nbsp;
+          National Single Window System
+        </div>
+
+        <div class="footer-right">
+          One Platform &nbsp; • &nbsp;
+          Multiple Approvals &nbsp; • &nbsp;
+          A Stronger Tomorrow
+        </div>
+
+      </footer>
+
+    </main>
+
+  </div>
+
+
+  <!-- =========================================
+       SIMPLE JAVASCRIPT
+       ========================================= -->
+
+  <script>
+
+    // This function runs when the AI Assistant send button is clicked.
+    function askAssistant() {
+
+      const input = document.getElementById("assistantQuestion");
+
+      const question = input.value.trim();
+
+      if (question === "") {
+        alert("Please type a question first.");
+        return;
+      }
+
+      alert("Your question is: " + question);
+
+      // Clear the input after submitting.
+      input.value = "";
+    }
+
+  </script>
+
+</body>
+</html>
