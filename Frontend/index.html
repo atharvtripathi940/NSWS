@@ -3,30 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>SAHAJ SETU</title>
-
+  <title>NSWS - National Single Window System</title>
   <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
-
-  <!-- =========================================
-       MAIN DASHBOARD
-       ========================================= -->
 
   <div class="dashboard">
 
     <!-- =========================================
          LEFT SIDEBAR
          ========================================= -->
-
     <aside class="sidebar">
 
       <div class="logo-area">
-        <span class="logo-circle">🏛️</span>
-
+        <div class="logo-circle">
+          <!-- Emblem / Logo Icon -->
+          <img src="https://img.icons8.com/color/48/columns.png" alt="NSWS Emblem" width="28">
+        </div>
         <div class="logo-text">
           <h1>NSWS</h1>
           <p>National Single Window System</p>
@@ -34,42 +27,37 @@
       </div>
 
       <ul class="menu">
-
         <li>
-          <a href="#" class="active">
+          <a href="index.html" class="active">
             <span class="menu-icon">⌂</span>
             Home
           </a>
         </li>
-
         <li>
-          <a href="#">
+          <a href="business.html">
             <span class="menu-icon">▦</span>
             My Business
           </a>
         </li>
-
         <li>
-          <a href="#">
+          <!-- Linked to approvals.html in the same window -->
+          <a href="approvals.html">
             <span class="menu-icon">▣</span>
             Know Your Approvals
           </a>
         </li>
-
         <li>
           <a href="#">
             <span class="menu-icon">▤</span>
             Applications
           </a>
         </li>
-
         <li>
           <a href="#">
             <span class="menu-icon">▱</span>
             Documents
           </a>
         </li>
-
         <li>
           <a href="#">
             <span class="menu-icon">♧</span>
@@ -77,39 +65,37 @@
             <span class="notification-badge">3</span>
           </a>
         </li>
-
         <li>
           <a href="#">
             <span class="menu-icon">◷</span>
             Track Status
           </a>
         </li>
-
         <li>
           <a href="#">
             <span class="menu-icon">⚙</span>
             AI Assistant
           </a>
         </li>
-
         <li>
           <a href="#">
             <span class="menu-icon">♙</span>
             Profile
           </a>
         </li>
-
         <li>
           <a href="#">
             <span class="menu-icon">⚙</span>
             Settings
           </a>
         </li>
-
       </ul>
 
       <div class="sidebar-bottom">
-        <div class="city-icon">🏙️</div>
+        <div class="city-icon">
+          <!-- City Graphic Silhouette -->
+          <img src="https://img.icons8.com/ios-filled/100/ffffff/city.png" alt="City Graphic" width="100">
+        </div>
         <div class="slogan">
           Simpler Approvals<br>
           Stronger India
@@ -118,11 +104,9 @@
 
     </aside>
 
-
     <!-- =========================================
          RIGHT SIDE / MAIN CONTENT
          ========================================= -->
-
     <main class="main-content">
 
       <!-- TOP HEADER -->
@@ -144,7 +128,9 @@
           </div>
 
           <div class="profile">
-            <div class="profile-image">RS</div>
+            <div class="profile-image">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Rahul Sharma Avatar" style="width:100%; height:100%; border-radius:50%; object-fit:cover;">
+            </div>
 
             <div>
               <div class="profile-name">Rahul Sharma</div>
@@ -157,22 +143,17 @@
         </div>
       </header>
 
-
       <!-- =========================================
            WELCOME + BUSINESS CARD
            ========================================= -->
-
       <section class="top-grid">
 
         <!-- Welcome card -->
         <div class="welcome card">
 
           <div class="welcome-content">
-
             <div class="welcome-small">• Welcome Back,</div>
-
             <h2>Rahul Sharma</h2>
-
             <p>
               Your single window to access all business approvals
               and clearances from government departments.
@@ -186,23 +167,21 @@
               <span>◷ Paperless</span>
             </div>
 
-            <button class="primary-button">
+            <!-- Linked to approvals.html -->
+            <button class="primary-button" onclick="window.location.href='approvals.html'">
               Explore Approvals →
             </button>
-
           </div>
 
-          <!-- Simple CSS/emoji placeholder for the city illustration -->
+          <!-- Banner background landscape/city image -->
           <div class="city-background">
-            🌆
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80" alt="Ease of Doing Business Banner" style="position: absolute; right: 0; bottom: 0; height: 100%; width: 45%; object-fit: cover; opacity: 0.35; mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0)); -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));">
           </div>
 
         </div>
 
-
         <!-- Business card -->
         <div class="business-card card">
-
           <div class="card-title">
             🏢 Your Business
           </div>
@@ -221,23 +200,22 @@
 
           <br>
 
-          <button class="small-button">
+          <button class="small-button" onclick="window.location.href='business.html'">
             View / Edit Business →
           </button>
-
         </div>
 
       </section>
 
-
       <!-- =========================================
            STATISTICS
            ========================================= -->
-
       <section class="stats">
 
         <div class="stat-card card">
-          <div class="stat-icon">📄</div>
+          <div class="stat-icon" style="background: #e0f2fe; color: #0284c7;">
+            📄
+          </div>
           <div>
             <strong>Total Approvals</strong>
             <h3 class="stat-number">14</h3>
@@ -246,7 +224,9 @@
         </div>
 
         <div class="stat-card card">
-          <div class="stat-icon">📋</div>
+          <div class="stat-icon" style="background: #dcfce7; color: #16a34a;">
+            📋
+          </div>
           <div>
             <strong>Applied</strong>
             <h3 class="stat-number">8</h3>
@@ -255,7 +235,9 @@
         </div>
 
         <div class="stat-card card">
-          <div class="stat-icon">☑️</div>
+          <div class="stat-icon" style="background: #f3e8ff; color: #9333ea;">
+            ☑️
+          </div>
           <div>
             <strong>Approved</strong>
             <h3 class="stat-number">4</h3>
@@ -264,7 +246,9 @@
         </div>
 
         <div class="stat-card card">
-          <div class="stat-icon">🕐</div>
+          <div class="stat-icon" style="background: #fef3c7; color: #d97706;">
+            🕐
+          </div>
           <div>
             <strong>Pending Action</strong>
             <h3 class="stat-number">2</h3>
@@ -274,29 +258,29 @@
 
       </section>
 
-
       <!-- =========================================
            KNOW YOUR APPROVALS + QUICK ACTIONS
            ========================================= -->
-
       <section class="middle-grid">
 
         <!-- Know Your Approvals -->
         <div class="approvals-card card">
-
-          <h3 class="section-heading">
-            💡 Know Your Approvals
-          </h3>
-
-          <p class="section-description">
-            Get a personalized list of approvals based on your business details.
-          </p>
+          <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+            <div>
+              <h3 class="section-heading">
+                💡 Know Your Approvals
+              </h3>
+              <p class="section-description">
+                Get a personalized list of approvals based on your business details.
+              </p>
+            </div>
+            <!-- Illustration Image -->
+            <img src="https://cdn-icons-png.flaticon.com/512/2910/2910791.png" alt="Approvals Graphic" width="60" style="opacity:0.85;">
+          </div>
 
           <div class="approval-form">
-
             <div>
               <label for="state">State</label>
-
               <select id="state">
                 <option>Maharashtra</option>
                 <option>Uttar Pradesh</option>
@@ -307,7 +291,6 @@
 
             <div>
               <label for="industry">Industry</label>
-
               <select id="industry">
                 <option>Manufacturing</option>
                 <option>IT Services</option>
@@ -318,23 +301,20 @@
 
             <div>
               <label for="investment">Investment</label>
-
               <select id="investment">
                 <option>₹ 5 Crore - ₹ 10 Crore</option>
                 <option>Below ₹ 5 Crore</option>
                 <option>₹ 10 Crore - ₹ 50 Crore</option>
-                <option>Above ₹ 50 Crore</option>
+                <option>Above ₹ 5 Crore</option>
               </select>
             </div>
-
           </div>
 
-          <button class="approval-button">
+          <!-- Direct navigation on click -->
+          <button class="approval-button" onclick="window.location.href='approvals.html'">
             Get My Approvals →
           </button>
-
         </div>
-
 
         <!-- Quick Actions -->
         <div class="quick-actions card">
@@ -345,7 +325,7 @@
 
           <div class="action-grid">
 
-            <button class="action-button">
+            <button class="action-button" onclick="window.location.href='approvals.html'">
               📄<br>
               Apply for Approval →
             </button>
@@ -371,11 +351,9 @@
 
       </section>
 
-
       <!-- =========================================
            APPLICATION TRACKING + RECENT ACTIVITY
            ========================================= -->
-
       <section class="bottom-grid">
 
         <!-- Application Tracking -->
@@ -387,7 +365,6 @@
           </div>
 
           <table class="application-table">
-
             <thead>
               <tr>
                 <th>Application ID</th>
@@ -399,7 +376,6 @@
             </thead>
 
             <tbody>
-
               <tr>
                 <td>NSWS-001234</td>
                 <td>Factory License</td>
@@ -455,13 +431,10 @@
                   <a href="#" class="view-link">View →</a>
                 </td>
               </tr>
-
             </tbody>
-
           </table>
 
         </div>
-
 
         <!-- Recent Activity -->
         <div class="activity-card card">
@@ -473,7 +446,6 @@
 
           <div class="activity-item">
             <div class="activity-icon">✓</div>
-
             <div class="activity-text">
               Your application for Pollution Consent has been approved.
               <span class="activity-time">2 hours ago</span>
@@ -481,8 +453,7 @@
           </div>
 
           <div class="activity-item">
-            <div class="activity-icon">!</div>
-
+            <div class="activity-icon" style="background:#fee2e2; color:#dc2626;">!</div>
             <div class="activity-text">
               Query raised for Fire NOC application.
               Please upload the requested document.
@@ -492,7 +463,6 @@
 
           <div class="activity-item">
             <div class="activity-icon">♧</div>
-
             <div class="activity-text">
               New notification from Labour Department.
               <span class="activity-time">1 day ago</span>
@@ -501,7 +471,6 @@
 
           <div class="activity-item">
             <div class="activity-icon">📄</div>
-
             <div class="activity-text">
               You have applied for Factory License.
               <span class="activity-time">1 day ago</span>
@@ -512,11 +481,9 @@
 
       </section>
 
-
       <!-- =========================================
            AI REGULATORY ASSISTANT
            ========================================= -->
-
       <section class="assistant card">
 
         <div class="assistant-title">
@@ -553,7 +520,7 @@
         </div>
 
         <div class="robot">
-          🤖
+          <img src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" alt="AI Assistant Bot" width="60">
         </div>
 
         <div class="assistant-message">
@@ -563,11 +530,9 @@
 
       </section>
 
-
       <!-- =========================================
            FOOTER
            ========================================= -->
-
       <footer class="footer">
 
         <div>
@@ -588,32 +553,6 @@
 
   </div>
 
-
-  <!-- =========================================
-       SIMPLE JAVASCRIPT
-       ========================================= -->
-
-  <script src="app.js">
-
-    // This function runs when the AI Assistant send button is clicked.
-    function askAssistant() {
-
-      const input = document.getElementById("assistantQuestion");
-
-      const question = input.value.trim();
-
-      if (question === "") {
-        alert("Please type a question first.");
-        return;
-      }
-
-      alert("Your question is: " + question);
-
-      // Clear the input after submitting.
-      input.value = "";
-    }
-
-  </script>
-
+  <!-- <script src="app.js"></script> -->
 </body>
 </html>
